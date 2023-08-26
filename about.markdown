@@ -27,14 +27,14 @@ permalink: /about
 <li><b>DESPISES THE DEVILISH NATURE OF THE WORLD DESPITE PROBABLY BEING A PART OF THE PROBLEM.</b></li>
 </ul>
 
-<h1><a href="/theme">Jekyll Theme</a></h1>
+<h1><a href="/about/theme">Jekyll Theme</a></h1>
 
 <p>Information about the theme I started with and am continuously modifying for this website <a href="https://github.com/pages-themes/leap-day">here</a></p>
 
 <div class="wrapper">
       <nav>
         <ul>
-        <li><a href="/">Go Back</a></li>
+        <li><a href="/lorman-online-portfolio">Go Back</a></li>
         </ul>
       </nav>
 </div>
