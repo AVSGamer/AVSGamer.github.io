@@ -22,7 +22,7 @@ title: Khayeel's Github(WIP)
 email: lorman.mamuyac@gmail.com
 description: Lorman's online portfolio & portal for public web-served tools and projects.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://avsgamer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://avsgamer.github.io/lorman-online-portfolio" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_url: "https://web.facebook.com/lorman.d.mamuyac/"
 github_username:  AVSGamer
 show_downloads: false
