@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Who Am I?
-permalink: /lorman-online-portfolio/about
+permalink: /about
 ---
 
 <h1>The bloke...</h1>
