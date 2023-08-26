@@ -15,5 +15,8 @@ h3, h4, h5, h6 { color: #99ff99; }
 
 body { font: 14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #ffffff; font-weight: 300; margin: 0px; padding: 0px 0 20px 0px; background: url(../images/body-background.png) #eae6d1; }
 
-nav ul li.tag-h1 a { font-weight: bold; color: #ffffff; background-color: #000000;}
-nav ul li.tag-h2 + .tag-h1 { margin-top: 10px; color: #ffffff; background-color: #000000;}
+nav ul li { padding: 5px 0px; line-height: 5px; background-color: #000000;}
+nav ul li.tag-h1 a { font-weight: bold; color: #ffffff; }
+nav ul li.tag-h2 + .tag-h1 { margin-top: 0px; color: #ffffff; }
+
+p { text-indent: 50px; }
