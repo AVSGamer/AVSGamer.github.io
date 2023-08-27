@@ -6,9 +6,9 @@ layout: default
 ---
 
 <p>Welcome! This is for my mobile phone visitors as the navigation bar on the left won't show up for them.
-<br><a href="/blog">Projects and Blogs</a> - Is where my own sentiments and projects are.
-<br><a href="/rig">My Computer Rig</a> - Is where information about my computer setup is.
-<br><a href="/about">About</a> - Is where you may know more about me in an unhinged way.
+<br><a href="/lorman-online-portfolio/blog">Projects and Blogs</a> - Is where my own sentiments and projects are.
+<br><a href="/lorman-online-portfolio/rig">My Computer Rig</a> - Is where information about my computer setup is.
+<br><a href="/lorman-online-portfolio/about">About</a> - Is where you may know more about me in an unhinged way.
 </p>
 <p>
 The following are game tools and softwares that I use which other developers made. May not include stuff on my mobile phone.
@@ -47,9 +47,9 @@ The following are game tools and softwares that I use which other developers mad
 <div class="wrapper">
       <nav>
         <ul>
-        <li><a href="/blog">Projects and Blogs</a></li>
-        <li><a href="/rig">My Computer Rig</a></li>
-        <li><a href="/about">About</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/blog">Projects and Blogs</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/rig">My Computer Rig</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/about">About</a></li>
         </ul>
       </nav>
 </div>

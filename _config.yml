@@ -21,18 +21,29 @@
 title: Khayeel's Github(WIP)
 email: lorman.mamuyac@gmail.com
 description: Lorman's online portfolio & portal for public web-served tools and projects.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://avsgamer.github.io/lorman-online-portfolio" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/lorman-online-portfolio" # the subpath of your site, e.g. /blog
+url: "https://avsgamer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_url: "https://web.facebook.com/lorman.d.mamuyac/"
 github_username:  AVSGamer
 show_downloads: false
 google_analytics: G-EVD2DYR4FR
+categ_list:
+  - 0-sentiments
+  - 1-college
+  - 2-notgametools
+  - 3-fgorder
+  - 4-pgraven
+  - 5-gensokishi
+  - 98-changelog
+  - 99-jekylldefault
 
 # Build settings
 #theme: minima
 remote_theme: pages-themes/leap-day@v0.2.0
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
