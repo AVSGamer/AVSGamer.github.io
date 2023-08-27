@@ -20,7 +20,7 @@ You can find the source code for Jekyll at GitHub:
 <div class="wrapper">
       <nav>
         <ul>
-        <li><a href="/lorman-online-portfolio/about">Go Back</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/about">Go Back</a></li>
         </ul>
       </nav>
 </div>

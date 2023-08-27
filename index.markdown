@@ -47,9 +47,9 @@ The following are game tools and softwares that I use which other developers mad
 <div class="wrapper">
       <nav>
         <ul>
-        <li><a href="/lorman-online-portfolio/blog">Projects and Blogs</a></li>
-        <li><a href="/lorman-online-portfolio/rig">My Computer Rig</a></li>
-        <li><a href="/lorman-online-portfolio/about">About</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/blog">Projects and Blogs</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/rig">My Computer Rig</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/about">About</a></li>
         </ul>
       </nav>
 </div>
