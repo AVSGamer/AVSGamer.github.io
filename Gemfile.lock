@@ -258,7 +258,9 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 228)
   http_parser.rb (~> 0.6.0)
+  jekyll-feed (~> 0.12)
   jekyll-remote-theme (~> 0.4.3)
+  jekyll-sitemap
   jekyll-theme-leap-day (~> 0.2.0)
   tzinfo (>= 1, < 3)
   tzinfo-data
