@@ -34,7 +34,7 @@ permalink: /about
 <div class="wrapper">
       <nav>
         <ul>
-        <li><a href="/lorman-online-portfolio">Go Back</a></li>
+        <li><a href="/lorman-online-portfolio/">Go Back</a></li>
         </ul>
       </nav>
 </div>
