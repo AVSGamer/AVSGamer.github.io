@@ -27,7 +27,7 @@ permalink: /about
 <li><b>DESPISES THE DEVILISH NATURE OF THE WORLD DESPITE PROBABLY BEING A PART OF THE PROBLEM.</b></li>
 </ul>
 
-<h1><a href="/about/theme">Jekyll Theme</a></h1>
+<h1><a href="/lorman-online-portfolio/about/theme">Jekyll Theme</a></h1>
 
 <p>Information about the theme I started with and am continuously modifying for this website <a href="https://github.com/pages-themes/leap-day">here</a></p>
 
