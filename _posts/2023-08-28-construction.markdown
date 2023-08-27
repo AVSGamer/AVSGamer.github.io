@@ -2,7 +2,7 @@
 layout: default
 title:  Construction Ongoing
 date:   2023-08-27 04:23:00 +0800
-categories: blog changelog
+categories: blog 6-changelog
 ---
 
 <h1>27/08/2023 - Construct.</h1>
