@@ -28,12 +28,12 @@ github_username:  AVSGamer
 show_downloads: false
 google_analytics: G-EVD2DYR4FR
 categ_list:
-  - 0-sentiments
-  - 1-college
-  - 2-notgametools
-  - 3-fgorder
-  - 4-pgraven
-  - 5-gensokishi
+  - 00-sentiments
+  - 01-college
+  - 02-notgametools
+  - 03-fgorder
+  - 04-pgraven
+  - 05-gensokishi
   - 98-changelog
   - 99-jekylldefault
 

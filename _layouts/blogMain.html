@@ -43,51 +43,104 @@
           <li><a href="/lorman-online-portfolio/">Homepage</a></li>
           <li><a href="/lorman-online-portfolio/blog/">Back to Blogs</a></li>
           {% for categ in site.categ_list %}
-          <li class="active"><a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categ }}</a></li>
+            {% if categ == "00-sentiments" %}
+            {% assign categName = "Sentiments" %}
+            {% endif %}
+
+            {% if categ == "01-college" %}
+            {% assign categName = "College Days" %}
+            {% endif %}
+
+            {% if categ == "02-notgametools" %}
+            {% assign categName = "Not Game Tools" %}
+            {% endif %}
+
+            {% if categ == "03-fgorder" %}
+            {% assign categName = "Fate/Grand Order" %}
+            {% endif %}
+
+            {% if categ == "04-pgraven" %}
+            {% assign categName = "Punishing Gray Raven" %}
+            {% endif %}
+
+            {% if categ == "05-gensokishi" %}
+            {% assign categName = "GensoKishi Metaworld" %}
+            {% endif %}
+
+            {% if categ == "98-changelog" %}
+            {% assign categName = "Changelogs" %}
+            {% endif %}
+
+            {% if categ == "99-jekylldefault" %}
+            {% assign categName = "Jekyll Theme Defaults" %}
+            {% endif %}
+
+          <li class="active"><a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a></li>
           {% endfor %}
         </ul>
       </nav>
       <section>
         {{ content }}
-        {% if page.url == "/blog/0-sentiments/" %}
-        {% assign categ = "0-sentiments" %}
+        {% if page.url == "/blog/00-sentiments/" %}
+        {% assign categ = "00-sentiments" %}
+        {% assign categName2 = Sentiments %}
         {% endif %}
 
-        {% if page.url == "/blog/1-college/" %}
-        {% assign categ = "1-college" %}
+        {% if page.url == "/blog/01-college/" %}
+        {% assign categ = "01-college" %}
+        {% assign categName2 = College Days %}
         {% endif %}
 
-        {% if page.url == "/blog/2-notgametools/" %}
-        {% assign categ = "2-notgametools" %}
+        {% if page.url == "/blog/02-notgametools/" %}
+        {% assign categ = "02-notgametools" %}
+        {% assign categName2 = Not Game Tools %}
         {% endif %}
 
-        {% if page.url == "/blog/3-fgorder/" %}
-        {% assign categ = "3-fgorder" %}
+        {% if page.url == "/blog/03-fgorder/" %}
+        {% assign categ = "03-fgorder" %}
+        {% assign categName2 = Fate/Grand Order %}
         {% endif %}
 
-        {% if page.url == "/blog/4-pgraven/" %}
-        {% assign categ = "4-pgraven" %}
+        {% if page.url == "/blog/04-pgraven/" %}
+        {% assign categ = "04-pgraven" %}
+        {% assign categName2 = Punishing Gray Raven %}
         {% endif %}
 
-        {% if page.url == "/blog/5-gensokishi/" %}
-        {% assign categ = "5-gensokishi" %}
+        {% if page.url == "/blog/05-gensokishi/" %}
+        {% assign categ = "05-gensokishi" %}
+        {% assign categName2 = GensoKishi Metaworld %}
         {% endif %}
 
         {% if page.url == "/blog/98-changelog/" %}
         {% assign categ = "98-changelog" %}
+        {% assign categName2 = Changelogs %}
         {% endif %}
 
         {% if page.url == "/blog/99-jekylldefault/" %}
         {% assign categ = "99-jekylldefault" %}
+        {% assign categName2 = Jekyll Theme Defaults %}
         {% endif %}
 
-        <h1>{{categ}} Posts</h1>
+        {% if page.url == "/blog/" %}
+          <h1>Latest 3 Posts</h1>
 
-        {% for item in site.posts %}
-        {% if item.categories[1] == categ %}
-        {{ item.content }}
+          {{site.posts[0].title}}
+          {{site.posts[0].content}}
+          {{site.posts[1].title}}
+          {{site.posts[1].content}}
+          {{site.posts[2].title}}
+          {{site.posts[2].content}}
+
+        {% else %}
+          <h1>{{categName2}} Posts</h1>
+
+          {% for item in site.posts %}
+          {% if item.categories[1] == categ %}
+          {{ item.content }}
+          {% endif %}
+          {% endfor %}
         {% endif %}
-        {% endfor %}
+        
       </section>
       <footer>
         {% if site.github.is_project_page %}
