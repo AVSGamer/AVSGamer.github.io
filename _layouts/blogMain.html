@@ -122,6 +122,43 @@
         {% endif %}
 
         {% if page.url == "/blog/" %}
+            | <a href="/lorman-online-portfolio/">Homepage</a> || <a href="/lorman-online-portfolio/blog/">Back to Blogs</a> |
+            {% for categ in site.categ_list %}
+              {% if categ == "00-sentiments" %}
+              {% assign categName = "Sentiments" %}
+              {% endif %}
+
+              {% if categ == "01-college" %}
+              {% assign categName = "College-Days" %}
+              {% endif %}
+
+              {% if categ == "02-notgametools" %}
+              {% assign categName = "Not-Game-Tools" %}
+              {% endif %}
+
+              {% if categ == "03-fgorder" %}
+              {% assign categName = "Fate/Grand-Order" %}
+              {% endif %}
+
+              {% if categ == "04-pgraven" %}
+              {% assign categName = "Punishing-Gray-Raven" %}
+              {% endif %}
+
+              {% if categ == "05-gensokishi" %}
+              {% assign categName = "GensoKishi-Metaworld" %}
+              {% endif %}
+
+              {% if categ == "98-changelog" %}
+              {% assign categName = "Changelogs" %}
+              {% endif %}
+
+              {% if categ == "99-jekylldefault" %}
+              {% assign categName = "Jekyll-Theme-Defaults" %}
+              {% endif %}
+
+              | <a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a> |
+            {% endfor %}
+
           <h1>Latest 3 Posts</h1>
 
           {{site.posts[0].title}}
@@ -132,12 +169,48 @@
           {{site.posts[2].content}}
 
         {% else %}
+            | <a href="/lorman-online-portfolio/">Homepage</a> || <a href="/lorman-online-portfolio/blog/">Back to Blogs</a> |
+            {% for categ in site.categ_list %}
+              {% if categ == "00-sentiments" %}
+              {% assign categName = "Sentiments" %}
+              {% endif %}
+
+              {% if categ == "01-college" %}
+              {% assign categName = "College-Days" %}
+              {% endif %}
+
+              {% if categ == "02-notgametools" %}
+              {% assign categName = "Not-Game-Tools" %}
+              {% endif %}
+
+              {% if categ == "03-fgorder" %}
+              {% assign categName = "Fate/Grand-Order" %}
+              {% endif %}
+
+              {% if categ == "04-pgraven" %}
+              {% assign categName = "Punishing-Gray-Raven" %}
+              {% endif %}
+
+              {% if categ == "05-gensokishi" %}
+              {% assign categName = "GensoKishi-Metaworld" %}
+              {% endif %}
+
+              {% if categ == "98-changelog" %}
+              {% assign categName = "Changelogs" %}
+              {% endif %}
+
+              {% if categ == "99-jekylldefault" %}
+              {% assign categName = "Jekyll-Theme-Defaults" %}
+              {% endif %}
+
+              | <a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a> |
+            {% endfor %}
           <h1>{{categName2}} Posts</h1>
 
           {% for item in site.posts %}
-          {% if item.categories[1] == categ %}
-          {{ item.content }}
-          {% endif %}
+            {% if item.categories[1] == categ %}
+            {{ item.content }}
+            {% endif %}
           {% endfor %}
         {% endif %}
         
