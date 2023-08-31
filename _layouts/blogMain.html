@@ -67,6 +67,10 @@
             {% assign categName = "GensoKishi Metaworld" %}
             {% endif %}
 
+            {% if categ == "06-elderscrollsonline" %}
+            {% assign categName = "Elder Scrolls Online" %}
+            {% endif %}
+
             {% if categ == "98-changelog" %}
             {% assign categName = "Changelogs" %}
             {% endif %}
@@ -111,6 +115,11 @@
         {% assign categName2 = "GensoKishi Metaworld" %}
         {% endif %}
 
+        {% if page.url == "/blog/06-elderscrollsonline/" %}
+        {% assign categ = "06-elderscrollsonline" %}
+        {% assign categName2 = "Elder Scrolls Online" %}
+        {% endif %}
+
         {% if page.url == "/blog/98-changelog/" %}
         {% assign categ = "98-changelog" %}
         {% assign categName2 = "Changelogs" %}
@@ -146,6 +155,10 @@
 
               {% if categ == "05-gensokishi" %}
               {% assign categName = "GensoKishi-Metaworld" %}
+              {% endif %}
+
+              {% if categ == "06-elderscrollsonline" %}
+              {% assign categName = "Elder-Scrolls-Online" %}
               {% endif %}
 
               {% if categ == "98-changelog" %}
@@ -193,6 +206,10 @@
 
               {% if categ == "05-gensokishi" %}
               {% assign categName = "GensoKishi-Metaworld" %}
+              {% endif %}
+
+              {% if categ == "06-elderscrollsonline" %}
+              {% assign categName = "Elder Scrolls Online" %}
               {% endif %}
 
               {% if categ == "98-changelog" %}
