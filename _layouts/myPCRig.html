@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    {% include head-custom.html %}
+  </head>
+  <body>
+
+      <header>
+        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% if site.show_downloads %}
+          <div class="downloads">
+            <span>Downloads:</span>
+            <ul>
+              <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
+              <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
+            </ul>
+          </div>
+        {% endif %}
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <table>
+            <tr>
+                <th>Part</th>
+                <th>Specifics</th>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td><a href="https://www.cpubenchmark.net/cpu_lookup.php?cpu=AMD+Ryzen+5+5500&id=4807">Ryzen 5 5500</a></td>
+            </tr>
+            <tr>
+                <td>Motherboard</td>
+                <td><a href="https://motherboarddb.com/motherboards/1586/B450M%20Steel%20Legend/">ASRock B450M Steel Legend P4.30</a></td>
+            </tr>
+            <tr>
+              <td>RAM Slot #1</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>RAM Slot #2</td>
+              <td><a href="https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr4-rgb-memory?speed=3200mt%2Fs&total%20(kit)%20capacity=16gb&kit=kit%20of%202&dram%20density=8gbit">DDR4-3200MHz Kingston-8GB(Samsung)</a></td>
+            </tr>
+            <tr>
+              <td>RAM Slot #3</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>RAM Slot #4</td>
+              <td><a href="https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr4-rgb-memory?speed=3200mt%2Fs&total%20(kit)%20capacity=16gb&kit=kit%20of%202&dram%20density=8gbit">DDR4-3200MHz Kingston-8GB(Samsung)</a></td>
+            </tr>
+            <tr>
+              <td>Graphics Card</td>
+              <td><a href="https://www.zotac.com/us/product/graphics_card/zotac-geforce-gtx-1070-mini-0">Zotac NVIDIA GEForce GTX 1070 Mini</a></td>
+            </tr>
+            <tr>
+              <td>Storage #1</td>
+              <td><a href="https://www.xpg.com/us/xpg/636">ADATA SX8100NP 1TB M.2 NVMe SSD</a></td>
+            </tr>
+            <tr>
+              <td>Power Supply</td>
+              <td><a href="https://www.fsplifestyle.com/en/product/DAGGERPRO650W.html">FSP Dagger PRO Gold 80+ SFX 650W Full Modular</a></td>
+            </tr>
+            <tr>
+              <td>CPU Case</td>
+              <td><a href="https://www.youtube.com/watch?v=VfXAfhbRJRI">Inplay Meteor 02 White</a></td>
+            </tr>
+            <tr>
+              <td>Airflow Fans #1</td>
+              <td><a href="https://www.coolermaster.com/catalog/coolers/case-fan/sickleflow-140-argb/">Cooler Master 140 ARGB SickleFlow x2</a></td>
+            </tr>
+            <tr>
+              <td>Airflow Fans #2</td>
+              <td><a href="https://www.idcooling.com/Product/detail/id/202/name/DF-12025-ARGB-TRIO-SNOW">ID-COOLING DF-12025ARGB Snow x3</a></td>
+            </tr>
+            <tr>
+              <td>Airflow Fans #3</td>
+              <td><a href="https://www.idcooling.com/Product/detail/id/192/name/XF-12025-RGB%20(Single)">ID-COOLING XF-12025-RGB Black x1</a></td>
+            </tr>
+            <tr>
+              <td>Extra Lighting #1</td>
+              <td><a href="https://www.youtube.com/watch?v=rrjjHpulCtM">COOLMOON 30cm. Light Bar</a></td>
+            </tr>
+            <tr>
+              <td>Extra Lighting #2</td>
+              <td><a href="https://www.youtube.com/watch?v=GCBZy2WXfWw">COOLMOON M.2 ARGB Heat Sink for SSD</a></td>
+            </tr>
+            <tr>
+              <td>AV Cabling #1</td>
+              <td>DVI-D to DVI-D Cable</td>
+            </tr>
+            <tr>
+              <td>AV Cabling #2</td>
+              <td><a href="https://www.ugreen.com/products/ugreen-4k-hdmi-cable?variant=39915663392830">UGREEN HDMI Cable</a></td>
+            </tr>
+            <tr>
+              <td>Airflow Fan Cabling</td>
+              <td><a href="https://www.idcooling.com/Product/detail/id/259/name/FS-04%20ARGB">ID-COOLING FS04 ARGB</a></td>
+            </tr>
+            <tr>
+              <td>ARGB Controller Hub</td>
+              <td><a href="https://www.razer.com/gaming-pc-cooling/Razer-Chroma-Addressable-RGB-Controller/RZ34-02140600-R3U1">Razer Chroma Adressable RGB Controller</a></td>
+            </tr>
+            <tr>
+              <td>Keyboard</td>
+              <td><a href="https://www.youtube.com/watch?v=hoMG3_VMFbc">Rakk Lam-Ang PRO PBT - Zilents Switches - Asstd. Keycaps</a></td>
+            </tr>
+            <tr>
+              <td>Mouse</td>
+              <td><a href="https://www.razer.com/gaming-mice/Razer-DeathAdder-Essential/RZ01-03850200-R3U1">Razer DeathAdder Essential White</a></td>
+            </tr>
+            <tr>
+              <td>Speakers</td>
+              <td><a href="https://asia.creative.com/p/archived-products/sbs-a60">Creative SBS A60</a></td>
+            </tr>
+            <tr>
+              <td>Monitor #1</td>
+              <td><a href="https://www.samsung.com/hk_en/monitors/business/business-monitor-24-inch-ls24a450bwt-xk/">Samsung SyncMaster 24"</a></td>
+            </tr>
+            <tr>
+              <td>Monitor #2</td>
+              <td><a href="https://tv-price.com/Philips_24PHA4309">Philips LED TV 24"</a></td>
+            </tr>
+            <tr>
+              <td>Gamepad</td>
+              <td><a href="https://www.youtube.com/watch?v=tFSelP8s-f8">8BitDo 2.4Ghz/Wired Ultimate Controller</a></td>
+            </tr>
+            <tr>
+              <td>Action Camera used as a Webcam</td>
+              <td><a href="https://www.youtube.com/watch?v=uirzCD-qALE">SJCAM SJ4000W</a></td>
+            </tr>
+            <tr>
+              <td>Headphones</td>
+              <td><a href="https://www.youtube.com/watch?v=Ga3p1XbS6qA">ThinkPlus TH30</a></td>
+            </tr>
+            <tr>
+              <td>Earphones</td>
+              <td><a href="https://www.youtube.com/watch?v=0mzQgiMyH_o">Baseus Encok WM01</a></td>
+            </tr>
+            <tr>
+              <td>Mousepad</td>
+              <td><a href="https://shopee.ph/Felt-and-Cork-Mousepad-800x300mm-by-MD-Custom-Mousepad-Large-Gaming-Mousepad-Extended-Felt-Deskpad-i.280722979.12232689353">Felt & Cork by MD Custom 800x300mm</a></td>
+            </tr>
+            <tr>
+              <td>Condenser Mic</td>
+              <td><a href="https://shopee.ph/BM-800-Set-Condenser-Computer-Audio-KTV-3.5mm-Wired-Sound-Recording-Condenser-Microphone-Mic-i.19153394.2231151872">BM-800</a></td>
+            </tr>
+            <tr>
+              <td>Video Capture Card</td>
+              <td><a href="https://shopee.ph/HDMI-Game-Capture-Card-HD-1080P-Video-Capture-Record-to-USB-i.120548258.1862884518">EZCAP284 HD Video Capture</a></td>
+            </tr>
+            <tr>
+              <td>Router</td>
+              <td><a href="https://mikrotik.com/product/RB952Ui-5ac2nD-TC">MikroTik HomeAP AC Lite</a></td>
+            </tr>
+            <tr>
+              <td>Pocket WiFi</td>
+              <td><a href="https://shopee.ph/Smart-Bro-Prepaid-LTE-A-Pocket-WiFi-Advanced-(ZTE-MF971RS)-i.174303721.14718125478">Smart LTE-A MF971RS</a></td>
+            </tr>
+            <tr>
+              <td>Bluetooth Adapter</td>
+              <td><a href="https://www.tp-link.com/ph/home-networking/mobile-accessory/ub500/">TP-LINK UB500</a></td>
+            </tr>
+            <tr>
+              <td>WiFi Adapter</td>
+              <td><a href="https://www.realtek.com/en/products/communications-network-ics/item/rtl8188etv">Generic Adapter with Realtek Chipset</a></td>
+            </tr>
+        </table>
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+          <p style="background-color: black;">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p style="background-color: black;"><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+  </body>
+</html>

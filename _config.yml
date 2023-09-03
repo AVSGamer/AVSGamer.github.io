@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Khayeel's Github(WIP)
+title: Lorman D. Mamuyac
 email: lorman.mamuyac@gmail.com
-description: Lorman's online portfolio & portal for public web-served tools and projects.
+description: Lorman Mamuyac's online portfolio & portal for public web-served tools and projects.
 baseurl: "/lorman-online-portfolio" # the subpath of your site, e.g. /blog
 url: "https://avsgamer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_url: "https://web.facebook.com/lorman.d.mamuyac/"
@@ -28,12 +28,13 @@ github_username:  AVSGamer
 show_downloads: false
 google_analytics: G-EVD2DYR4FR
 categ_list:
-  - 0-sentiments
-  - 1-college
-  - 2-notgametools
-  - 3-fgorder
-  - 4-pgraven
-  - 5-gensokishi
+  - 00-sentiments
+  - 01-college
+  - 02-notgametools
+  - 03-fgorder
+  - 04-pgraven
+  - 05-gensokishi
+  - 06-elderscrollsonline
   - 98-changelog
   - 99-jekylldefault
 
