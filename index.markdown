@@ -122,7 +122,7 @@ The following are game tools and softwares that I use which other developers mad
       <nav>
         <ul>
         <li class="active"><a href="/lorman-online-portfolio/blog">Projects and Blogs</a></li>
-        <li class="active"><a href="/lorman-online-portfolio/rig">My Computer Rig</a></li>
+        <li class="active"><a href="/lorman-online-portfolio/mypcrig">My Computer Rig</a></li>
         <li class="active"><a href="/lorman-online-portfolio/about">About</a></li>
         </ul>
       </nav>
