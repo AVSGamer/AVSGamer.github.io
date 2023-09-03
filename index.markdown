@@ -5,7 +5,7 @@
 layout: default
 ---
 
-<p>Welcome! This is for my mobile phone visitors as the navigation bar on the left won't show up for them.
+<p>Welcome! These links below are for my mobile phone visitors as the navigation bar on the left won't show up for them.
 <br><a href="/lorman-online-portfolio/blog">Projects and Blogs</a> - Is where my own sentiments and projects are.
 <br><a href="/lorman-online-portfolio/mypcrig">My Computer Rig</a> - Is where information about my computer setup is.
 <br><a href="/lorman-online-portfolio/about">About</a> - Is where you may know more about me in an unhinged way.
