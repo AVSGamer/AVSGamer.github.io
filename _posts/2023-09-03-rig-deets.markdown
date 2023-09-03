@@ -1,0 +1,15 @@
+---
+layout: default
+title:  Computer Rig Details Added
+categories: blog 98-changelog
+---
+
+<h3>03-09-2023 - Website Version 1.0 Done</h3>
+
+<p>I don't think websites actually have versioning numbers. But the cached version of this website is something I waiting for to refresh, it's still showing up in shares as "Khayeel's GitHub(WIP)" which is the old title. It's still incomplete but at least all the links are working now and has something in them.</p>
+
+<h4>Changes:</h4>
+<ul>
+<li>Added Computer Rig Details and Page</li>
+<li>Removed the "(WIP)" in the website's title.</li>
+</ul>
