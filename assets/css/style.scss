@@ -23,3 +23,6 @@ nav ul li.active a { font-size: 16px;}
 p { text-indent: 50px; }
 
 #banner #logo { position: absolute; height: 36px; width: 36px; right: 7px; top: 7px; display: block; background: url(../images/octocat-logo.png); }
+
+header h1 { font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif; color: black; text-shadow: 0px 2px 0px lightyellow; margin: 0px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; }
+header p { color: black; text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0; font-size: 18px; margin: 0px; }
