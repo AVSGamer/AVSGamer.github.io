@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Lorman D. Mamuyac(WIP)
+title: Lorman D. Mamuyac
 email: lorman.mamuyac@gmail.com
 description: Lorman Mamuyac's online portfolio & portal for public web-served tools and projects.
 baseurl: "/lorman-online-portfolio" # the subpath of your site, e.g. /blog
