@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  PGR Enhancement Calculator Sheet
-categories: blog 04-pgraven
+categories: blog 03-gametools 0302-pgraven
 ---
 
 <h3>10/03/2023 - Enhancement Calculator and EXP Tables</h3>

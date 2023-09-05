@@ -31,12 +31,15 @@ categ_list:
   - 00-sentiments
   - 01-college
   - 02-notgametools
-  - 03-fgorder
-  - 04-pgraven
-  - 05-gensokishi
-  - 06-elderscrollsonline
+  - 03-gametools
   - 98-changelog
   - 99-jekylldefault
+game_categ_list:
+  - 0300-nonspecific
+  - 0301-fgorder
+  - 0302-pgraven
+  - 0303-gensokishi
+  - 0304-elderscrollsonline
 
 # Build settings
 #theme: minima

@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  GensoKishi Monster Spreadsheet
-categories: blog 05-gensokishi
+categories: blog 03-gametools 0303-gensokishi
 ---
 
 <h3>20/06/2023 - GensoKishi Metaworld Monster Spreadsheet</h3>

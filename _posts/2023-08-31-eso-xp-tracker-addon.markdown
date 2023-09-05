@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  ESO XP Tracker Addon
-categories: blog 06-elderscrollsonline
+categories: blog 03-gametools 0304-elderscrollsonline
 ---
 
 <h3>13/05/2023 - XP Tracker Addon for ESO</h3>

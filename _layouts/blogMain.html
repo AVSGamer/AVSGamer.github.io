@@ -43,6 +43,9 @@
         <ul>
           <li><a href="/lorman-online-portfolio/">Homepage</a></li>
           <li><a href="/lorman-online-portfolio/blog/">Back to Blogs</a></li>
+          
+
+        {% if page.url == "/blog/" %}
           {% for categ in site.categ_list %}
             {% if categ == "00-sentiments" %}
             {% assign categName = "Sentiments" %}
@@ -56,20 +59,8 @@
             {% assign categName = "Not Game Tools" %}
             {% endif %}
 
-            {% if categ == "03-fgorder" %}
-            {% assign categName = "Fate/Grand Order" %}
-            {% endif %}
-
-            {% if categ == "04-pgraven" %}
-            {% assign categName = "Punishing Gray Raven" %}
-            {% endif %}
-
-            {% if categ == "05-gensokishi" %}
-            {% assign categName = "GensoKishi Metaworld" %}
-            {% endif %}
-
-            {% if categ == "06-elderscrollsonline" %}
-            {% assign categName = "Elder Scrolls Online" %}
+            {% if categ == "03-gametools" %}
+            {% assign categName = "Game Tools" %}
             {% endif %}
 
             {% if categ == "98-changelog" %}
@@ -80,8 +71,91 @@
             {% assign categName = "Jekyll Theme Defaults" %}
             {% endif %}
 
-          <li class="active"><a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a></li>
+            <li class="active"><a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a></li>
           {% endfor %}
+
+        {% elsif page.url == "/blog/98-changelog/"%}
+          {% for categ in site.categ_list %}
+            {% if categ == "00-sentiments" %}
+            {% assign categName = "Sentiments" %}
+            {% endif %}
+
+            {% if categ == "01-college" %}
+            {% assign categName = "College Days" %}
+            {% endif %}
+
+            {% if categ == "02-notgametools" %}
+            {% assign categName = "Not Game Tools" %}
+            {% endif %}
+
+            {% if categ == "03-gametools" %}
+            {% assign categName = "Game Tools" %}
+            {% endif %}
+
+            {% if categ == "98-changelog" %}
+            {% assign categName = "Changelogs" %}
+            {% endif %}
+
+            {% if categ == "99-jekylldefault" %}
+            {% assign categName = "Jekyll Theme Defaults" %}
+            {% endif %}
+
+            <li class="active"><a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a></li>
+          {% endfor %}
+
+        {% elsif page.url == "/blog/99-jekylldefault/" %}
+          {% for categ in site.categ_list %}
+            {% if categ == "00-sentiments" %}
+            {% assign categName = "Sentiments" %}
+            {% endif %}
+
+            {% if categ == "01-college" %}
+            {% assign categName = "College Days" %}
+            {% endif %}
+
+            {% if categ == "02-notgametools" %}
+            {% assign categName = "Not Game Tools" %}
+            {% endif %}
+
+            {% if categ == "03-gametools" %}
+            {% assign categName = "Game Tools" %}
+            {% endif %}
+
+            {% if categ == "98-changelog" %}
+            {% assign categName = "Changelogs" %}
+            {% endif %}
+
+            {% if categ == "99-jekylldefault" %}
+            {% assign categName = "Jekyll Theme Defaults" %}
+            {% endif %}
+
+            <li class="active"><a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a></li>
+          {% endfor %}
+
+        {% elsif page.url >= "/blog/03-gametools/" %}
+          {% for categ2 in site.game_categ_list %}
+            {% if categ2 == "0300-nonspecific" %}
+            {% assign categName = "Non-Game Specific" %}
+            {% endif %}
+
+            {% if categ2 == "0301-fgorder" %}
+            {% assign categName = "Fate/Grand Order" %}
+            {% endif %}
+
+            {% if categ2 == "0302-pgraven" %}
+            {% assign categName = "Punishing Gray Raven" %}
+            {% endif %}
+
+            {% if categ2 == "0303-gensokishi" %}
+            {% assign categName = "GensoKishi" %}
+            {% endif %}
+
+            {% if categ2 == "0304-elderscrollsonline" %}
+            {% assign categName = "Elder Scrolls Online" %}
+            {% endif %}
+            <li class="active"><a href="/lorman-online-portfolio/blog/03-gametools/{{ categ2 }}">{{ categName }}</a></li>
+          {% endfor %}  
+        {% endif %}
         </ul>
       </nav>
       <section>
@@ -101,24 +175,9 @@
         {% assign categName2 = "Not Game Tools" %}
         {% endif %}
 
-        {% if page.url == "/blog/03-fgorder/" %}
-        {% assign categ = "03-fgorder" %}
-        {% assign categName2 = "Fate/Grand Order" %}
-        {% endif %}
-
-        {% if page.url == "/blog/04-pgraven/" %}
-        {% assign categ = "04-pgraven" %}
-        {% assign categName2 = "Punishing Gray Raven" %}
-        {% endif %}
-
-        {% if page.url == "/blog/05-gensokishi/" %}
-        {% assign categ = "05-gensokishi" %}
-        {% assign categName2 = "GensoKishi Metaworld" %}
-        {% endif %}
-
-        {% if page.url == "/blog/06-elderscrollsonline/" %}
-        {% assign categ = "06-elderscrollsonline" %}
-        {% assign categName2 = "Elder Scrolls Online" %}
+        {% if page.url == "/blog/03-gametools/" %}
+        {% assign categ = "03-gametools" %}
+        {% assign categName2 = "Game Tools" %}
         {% endif %}
 
         {% if page.url == "/blog/98-changelog/" %}
@@ -129,6 +188,36 @@
         {% if page.url == "/blog/99-jekylldefault/" %}
         {% assign categ = "99-jekylldefault" %}
         {% assign categName2 = "Jekyll Theme Defaults" %}
+        {% endif %}
+
+        {% if page.url == "/blog/03-gametools/0300-nonspecific/" %}
+        {% assign categ = "03-gametools" %}
+        {% assign categ2 = "0300-nonspecific" %}
+        {% assign categName2 = "Non-Specific Game Tools" %}
+        {% endif %}
+
+        {% if page.url == "/blog/03-gametools/0301-fgorder/" %}
+        {% assign categ = "03-gametools" %}
+        {% assign categ2 = "0301-fgorder" %}
+        {% assign categName2 = "Fate/Grand Order" %}
+        {% endif %}
+
+        {% if page.url == "/blog/03-gametools/0302-pgraven/" %}
+        {% assign categ = "03-gametools" %}
+        {% assign categ2 = "0302-pgraven" %}
+        {% assign categName2 = "Punshing Gray Raven" %}
+        {% endif %}
+
+        {% if page.url == "/blog/03-gametools/0303-gensokishi/" %}
+        {% assign categ = "03-gametools" %}
+        {% assign categ2 = "0303-gensokishi" %}
+        {% assign categName2 = "GensoKishi" %}
+        {% endif %}
+
+        {% if page.url == "/blog/03-gametools/0304-elderscrollsonline/" %}
+        {% assign categ = "03-gametools" %}
+        {% assign categ2 = "0304-elderscrollsonline" %}
+        {% assign categName2 = "Elder Scrolls Online" %}
         {% endif %}
 
         {% if page.url == "/blog/" %}
@@ -146,20 +235,8 @@
               {% assign categName = "Not-Game-Tools" %}
               {% endif %}
 
-              {% if categ == "03-fgorder" %}
-              {% assign categName = "Fate/Grand-Order" %}
-              {% endif %}
-
-              {% if categ == "04-pgraven" %}
-              {% assign categName = "Punishing-Gray-Raven" %}
-              {% endif %}
-
-              {% if categ == "05-gensokishi" %}
-              {% assign categName = "GensoKishi-Metaworld" %}
-              {% endif %}
-
-              {% if categ == "06-elderscrollsonline" %}
-              {% assign categName = "Elder-Scrolls-Online" %}
+              {% if categ == "03-gametools" %}
+              {% assign categName = "Game-Tools" %}
               {% endif %}
 
               {% if categ == "98-changelog" %}
@@ -182,6 +259,157 @@
           {{site.posts[2].title}}
           {{site.posts[2].content}}
 
+        {% elsif page.url == "/blog/03-gametools/" %}
+
+            | <a href="/lorman-online-portfolio/">Homepage</a> || <a href="/lorman-online-portfolio/blog/">Back to Blogs</a> |
+                {% for categ2 in site.game_categ_list %}
+                  {% if categ2 == "0300-nonspecific" %}
+                  {% assign categName = "Non-Game-Specific" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0301-fgorder" %}
+                  {% assign categName = "Fate/Grand-Order" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0302-pgraven" %}
+                  {% assign categName = "Punishing-Gray-Raven" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0303-gensokishi" %}
+                  {% assign categName = "GensoKishi" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0304-elderscrollsonline" %}
+                  {% assign categName = "Elder-Scrolls-Online" %}
+                  {% endif %}
+    
+                  | <a href="/lorman-online-portfolio/blog/03-gametools/{{ categ2 }}">{{ categName }}</a> |
+                {% endfor %}
+              <h1>{{categName2}} Posts</h1>
+    
+              {% for item in site.posts %}
+                {% if item.categories[1] == categ %}
+                {{ item.content }}
+                {% endif %}
+              {% endfor %}
+            
+        {% elsif page.url == "/blog/98-changelog/" %}
+
+          | <a href="/lorman-online-portfolio/">Homepage</a> || <a href="/lorman-online-portfolio/blog/">Back to Blogs</a> |
+          {% for categ in site.categ_list %}
+            {% if categ == "00-sentiments" %}
+            {% assign categName = "Sentiments" %}
+            {% endif %}
+
+            {% if categ == "01-college" %}
+            {% assign categName = "College-Days" %}
+            {% endif %}
+
+            {% if categ == "02-notgametools" %}
+            {% assign categName = "Not-Game-Tools" %}
+            {% endif %}
+
+            {% if categ == "03-gametools" %}
+            {% assign categName = "Game-Tools" %}
+            {% endif %}
+
+            {% if categ == "98-changelog" %}
+            {% assign categName = "Changelogs" %}
+            {% endif %}
+
+            {% if categ == "99-jekylldefault" %}
+            {% assign categName = "Jekyll-Theme-Defaults" %}
+            {% endif %}
+
+            | <a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a> |
+          {% endfor %}
+          <h1>{{categName2}} Posts</h1>
+
+          {% for item in site.posts %}
+            {% if item.categories[1] == categ %}
+            {{ item.content }}
+            {% endif %}
+          {% endfor %}
+
+        {% elsif page.url == "/blog/99-jekylldefault/" %}
+
+          | <a href="/lorman-online-portfolio/">Homepage</a> || <a href="/lorman-online-portfolio/blog/">Back to Blogs</a> |
+          {% for categ in site.categ_list %}
+            {% if categ == "00-sentiments" %}
+            {% assign categName = "Sentiments" %}
+            {% endif %}
+
+            {% if categ == "01-college" %}
+            {% assign categName = "College-Days" %}
+            {% endif %}
+
+            {% if categ == "02-notgametools" %}
+            {% assign categName = "Not-Game-Tools" %}
+            {% endif %}
+
+            {% if categ == "03-gametools" %}
+            {% assign categName = "Game-Tools" %}
+            {% endif %}
+
+            {% if categ == "98-changelog" %}
+            {% assign categName = "Changelogs" %}
+            {% endif %}
+
+            {% if categ == "99-jekylldefault" %}
+            {% assign categName = "Jekyll-Theme-Defaults" %}
+            {% endif %}
+
+            | <a href="/lorman-online-portfolio/blog/{{ categ }}">{{ categName }}</a> |
+          {% endfor %}
+          <h1>{{categName2}} Posts</h1>
+
+          {% for item in site.posts %}
+            {% if item.categories[1] == categ %}
+            {{ item.content }}
+            {% endif %}
+          {% endfor %}
+
+        {% elsif page.url >= "/blog/03-gametools/" %}
+    
+            | <a href="/lorman-online-portfolio/">Homepage</a> || <a href="/lorman-online-portfolio/blog/">Back to Blogs</a> |
+                {% for categ2 in site.game_categ_list %}
+                  {% if categ2 == "0300-nonspecific" %}
+                  {% assign categName = "Non-Game-Specific" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0301-fgorder" %}
+                  {% assign categName = "Fate/Grand-Order" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0302-pgraven" %}
+                  {% assign categName = "Punishing-Gray-Raven" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0303-gensokishi" %}
+                  {% assign categName = "GensoKishi" %}
+                  {% endif %}
+    
+                  {% if categ2 == "0304-elderscrollsonline" %}
+                  {% assign categName = "Elder-Scrolls-Online" %}
+                  {% endif %}
+    
+                  | <a href="/lorman-online-portfolio/blog/03-gametools/{{ categ2 }}">{{ categName }}</a> |
+                {% endfor %}
+              <h1>{{categName2}} Posts</h1>
+    
+              {% assign urlName = page.url | slice: 19,99 %}
+    
+              {% for categ2 in site.game_categ_list %}
+                {% assign categ3 = categ2 | append: '/'  %}
+                {% if urlName == categ3%}
+                  {% for item in site.posts %}
+                    {% if item.categories[2] == categ2 %}
+                    {{ item.content }}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+
         {% else %}
             | <a href="/lorman-online-portfolio/">Homepage</a> || <a href="/lorman-online-portfolio/blog/">Back to Blogs</a> |
             {% for categ in site.categ_list %}
@@ -197,20 +425,8 @@
               {% assign categName = "Not-Game-Tools" %}
               {% endif %}
 
-              {% if categ == "03-fgorder" %}
-              {% assign categName = "Fate/Grand-Order" %}
-              {% endif %}
-
-              {% if categ == "04-pgraven" %}
-              {% assign categName = "Punishing-Gray-Raven" %}
-              {% endif %}
-
-              {% if categ == "05-gensokishi" %}
-              {% assign categName = "GensoKishi-Metaworld" %}
-              {% endif %}
-
-              {% if categ == "06-elderscrollsonline" %}
-              {% assign categName = "Elder-Scrolls-Online" %}
+              {% if categ == "03-gametools" %}
+              {% assign categName = "Game-Tools" %}
               {% endif %}
 
               {% if categ == "98-changelog" %}
